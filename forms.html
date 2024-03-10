@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORMS IN HTML</title>
+        <body>
+            <forms action="scripts/data.php" method="post" enctype="multipart/form-data">
+                <label for="Name">Enter your Name</label>
+                <input type="text" name="Name" id="Name" value="Name">
+                <br>
+                <label for="email">Enter your email</label>
+                <input type="email" name="Enter your email" id="Enter your email" value="Enter your email">
+                <br>
+                <textarea>Enter your bio</textarea>
+                <br>
+                <fieldset>
+                    <legend>Specialization</legend>
+                    <input type="checkbox" name="Engineeering" id="Engineeering" value="Engineering" checked>
+                    <label for="Engineeering">Engineeering</label>
+                    <br>
+                    <input type="checkbox" name="Medicine" id="Medicine" value="Medicine" checked>
+                    <label for="Medicine">Medicine</label>
+                    <br>
+                    <input type="checkbox" name="Theology" id="Theology" value="Theology" checked>
+                    <label for="Theology">Theology</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Gender</legend>
+                    <input type="radio" name="Gender" id="male" value="Male" checked>
+                    <label for="Male">male</label>
+                    <br>
+                    <input type="radio" name="Gender" id="female" value="female" checked>
+                    <label for="female">female</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Nationality</legend>
+                    <label for="Nationality">Nationality</label>
+                    <select name="Nationality" id="Nationality">
+                        <option value="">--Select preffered countries--</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Democratic Republic of Congo">Democratic Republic of Congo</option>
+                        <option value="Burundi">Burundi</option>
+                        <option value="Rwanda">Rwanda</option>
+                        <option value="South Sudan">South Sudan</option>
+                        <option value="Ethiopia">Ethiopia</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Documents</legend>
+                    <input type="file" name="passport information page" id="passport " value="passport" accept="pdf">
+                    <label for="Passport">Passport </label>
+                    <br>
+                    <input type="file" name="passport size" id="passport size" value="passport size" accept="images.jpg>
+                    <label for="Passport size="">Passport size</label>
+                </fieldset>
+                <input type="reset" name="Reset" id="Reset"value="Reset" checked>
+                <br>
+                <input type="submit" name="Submit" id="Submit" value="Submit" checked>
+            </forms>
+            
+        </body>
+    </head>
+</html>
